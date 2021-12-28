@@ -1,7 +1,9 @@
 import requests
 import time
 import json
-
+"""
+obtain real-time price
+"""
 
 def obtain_price(names):
     """
