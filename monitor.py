@@ -19,8 +19,9 @@ def obtain_price(names):
             time.sleep(10)
 
 
-def main():
-    stock_names = ['ETH-USDT', 'AVAX-USDT']
+def main(stock_names=None):
+    if not stock_names:
+        stock_names = ['ETH-USDT', 'AVAX-USDT']
     stock_number = {'ETH-USDT': '1640089666667', 'AVAX-USDT': '1640089080391'}
     url_names = []
     for stock_name in stock_names:
